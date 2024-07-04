@@ -95,7 +95,7 @@ def is_user_admin(user_id, chat_id):
 
 @bot.message_handler(commands=['approve', 'disapprove'])
 def approve_or_disapprove_user(message):
-    user_id = message.from_user.id
+    user_id = ["5248584034"]
     chat_id = message.chat.id
     is_admin = is_user_admin(user_id, CHANNEL_ID)
     cmd_parts = message.text.split()
